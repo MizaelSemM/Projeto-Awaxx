@@ -9,7 +9,7 @@ header {
 
 .container {
     display: flex;
-    width: 1600px;
+    width: 1200px;
     height: 100%;
 }
 
@@ -20,12 +20,8 @@ header {
 
 }
 
-.logo-title {
-    font-size: 45px;
-    font-family: "Montserrat";
-    font-weight: 700;
-    color: #b68b58;
-    margin-bottom: 15px;
+.logo img{
+    width: 150px;
     cursor: pointer;
 }
 
@@ -41,20 +37,109 @@ ul {
     gap: 20px;
 
     a {
-        font-size: 17px;
+        font-size: 15px;
         font-family: "Montserrat";
         font-weight: 600;
         display: flex;
         align-items: center;
         height: 100px;
+        color: #999;
         border-bottom: 4px solid black;
 
         &:hover {
             border-bottom: 4px solid #b98b59;
-
+            color: white;
+            transition: all 0.4s ease;
         }
     }
     .active{
         border-bottom: 4px solid #b98b59;
+        color: white;
     }
+}
+
+#banner{
+    height: calc(100vh - 100px);
+    background-image: url(../assets/images/bg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    overflow: hidden;
+}
+#banner .sliders{
+    width: 300%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#banner .slide {
+    width: 100vw;
+    height: 100%;
+}
+.teste1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+}
+
+.slidearea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.tex-desi{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 80px;
+}
+.tex-comm{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 80px;
+    color: #b88a58;
+    position: relative;
+    bottom: 45px;
+}
+.slidearea h3{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 23px;
+    position: relative;
+    bottom: 43px;
+}
+.slidearea a{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 13px;
+    background-color: #b98b59;
+    padding: 14px 55px;
+    border-radius: 30px;
+    &:hover{
+        background-color: #373737;
+        transition: all 0.5s ease;
+    }
+}
+.sliders-pointer{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#banner .pointer{
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+    border: 2px solid #b88a58;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#banner .active{
+    background-color: #b88a58;
 }
