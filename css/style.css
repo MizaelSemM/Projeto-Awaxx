@@ -140,6 +140,10 @@ ul {
     border: 2px solid #b88a58;
     margin-left: 10px;
     cursor: pointer;
+
+    &:hover{
+        background-color: #b98b59;
+    }
 }
 #banner .active{
     background-color: #b88a58;
@@ -153,6 +157,7 @@ ul {
 }
 #defal-light .container{
     flex-direction: column;
+    justify-content: center;
 }
 #defal-light .widget-title{
     text-align: center;
@@ -160,6 +165,8 @@ ul {
     font-weight: 700;
     font-size: 40px;
     margin-top: 20px;
+    position: relative;
+    bottom: 50px;
 }
 #defal-light .widget-desc{
     margin-bottom: 20px;
@@ -168,10 +175,13 @@ ul {
     font-weight: 600;
     font-size: 20px;
     color: #afafaf;
+    position: relative;
+    bottom: 50px;
 }
 #defal-light .widget-body{
-    height: 350px;
+    height: 300px;
     display: flex;
+    margin-bottom: 20px;
 }
 .body-text{
     flex: 1;
@@ -188,6 +198,8 @@ ul {
         padding: 15px 60px;
         border-radius: 20px;
         color: white;
+        position: relative;
+        right: 177px;
         &:hover{
             background-color: #373737;
             transition: all 0.3s ease;
@@ -221,14 +233,14 @@ ul {
 #defal-dark .container{
     flex-direction: column;
 }
-#defal-dark .widget-title{
+#defal-dark .widget-titl{
     text-align: center;
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 40px;
     margin-top: 20px;
 }
-#defal-dark .widget-desc{
+#defal-dark .widget-descri{
     margin-bottom: 20px;
     text-align: center;
     font-family: "Montserrat";
