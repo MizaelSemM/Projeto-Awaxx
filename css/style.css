@@ -623,7 +623,7 @@ ul {
 }
 
 .redes-sociais{
-    margin-top: 60px;
+    margin-top: 50px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -633,12 +633,16 @@ ul {
         border-radius: 30px;
         overflow: hidden;
         right: 5px;
-        cursor: pointer;
+        border:3px solid transparent;
+        &:hover{
+            border: 3px solid #b68b58;
+        }
     }
 }
 #our-team a{
     padding: 0px;
-    border: #bebebe;
+    margin: 0px;
+    background-color: transparent;
 }
 
 .contain{
@@ -648,7 +652,7 @@ ul {
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: -100px;
+    bottom: -130px;
 }
 
 .bola {
